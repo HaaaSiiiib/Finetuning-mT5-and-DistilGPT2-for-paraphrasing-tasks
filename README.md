@@ -17,14 +17,22 @@ A continuacion se muestran los valores elegidos para el numero de epocas, batch 
 Para ver el resto de hiperparametros se debera comprobar en cada notebook respecivo
 ## mT5
 • Se uso early stopping con un máximo de 5 épocas
+
 • El tamaño del batch fue de 8
+
 • El warm up ratio se estableció en 0.6
+
 • Se usó una tasa de aprendizaje de 1e-4
+
 
 ## DistilGPT2
 • La tasa de aprendizaje se ajustó en 1e-5
+
 • Se entreno durante 5 épocas
+
 • Se uso un warm up ratio de 0.6
+
 • El tamaño del batch se estableció en 8
+
 
 
