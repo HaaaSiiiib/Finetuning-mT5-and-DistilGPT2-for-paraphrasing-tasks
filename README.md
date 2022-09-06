@@ -1,38 +1,43 @@
 # Finetuning-mT5-and-DistillGPT2-for-paraphrasing-tasks
-Este repositorio es parte de mi trabajo de fin de master. Se creo un dataset de entrenamiento para tareas de parafrassis que combina los conocidos datasets de parafrasis de dataset de TaPaCO y PAWS.
-Ademas se muestra como se llevó a cabo el finetuning sobre dos modelos transformers(mT5 y DistilGPT2) para la realizacion de tareas de parafraseo.
+This repository is part of my master's thesis. A custom training dataset was created for paraphrase tasks. This dataset combines the TaPaCO and PAWS dataset paraphrase datasets.
+It also shows how the finetuning was carried out on two transformer models (mT5 and DistilGPT2) in order to train these models for paraphrasing tasks.
 
-La base de datos custom creada se encuentra bajo el nombre dataset_comb.csv, en la carpeta Dataset comb(TaPaCo +PAWS) y es de libre acceso.
-En el Notebook Databases combination + finetuning DistilGPT2 .ipynb, esta disponible el codigo para la generacion de la base de datos custom, asi como el codigo para realizar finetunign sobre DistilGPT2 con la api de entrenamiento de la libreria de transformers de hugging face.
-En el Notebook Finetuning mT5.ipynb se muestra el codigo para realizar finetuning a un modelo mT5 con la libreria simple transformers.
+The custom database created is found under the name dataset_comb.csv, in the folder Dataset comb(TaPaCo +PAWS) and is freely accessible.
+In the Notebook Databases combination + finetuning DistilGPT2 .ipynb, the code for generating the custom database is available, as well as the code to perform finetuning on DistilGPT2 with the hugging face transformers library training api.
+In the Notebook Finetuning mT5.ipynb the code for finetuning the mT5 model with the simple transformers library is shown.
 
 # Modelos usados 
-mT5 es una variación del modelo original de Google T5 que fue pre-entrenado con un corpus de datos gigante en muchos idiomas. Es un modelo multilingue con 
-arquitectura encoder-decoder. 
-DistillGPT2 es un modelo inspirado en GPT2 que ha sufrido una destilación de parámetros, es decir, se ha reducido el número de parámetros y se ha compactado el modelo. Este modelo
-es un modelo decoder-only basado en la arquitectura de los modelos generativos GPT, y es el más ligero de su familia.
+# Models used
+mT5 is a variation of the original Google T5 model and was pre-trained on a giant data corpus in many languages. It is a multilingual model with
+encoder-decoder architecture.
+DistillGPT2 is a GPT2-inspired model that has undergone parameter distillation, meaning that the number of parameters has been reduced and the model has been compacted. This model
+it is a decoder-only model based on the architecture of the generative GPT models, and it is the lightest of its family.
 
 # Hiperparametros utilizados para el finetuning 
 A continuacion se muestran los valores elegidos para el numero de epocas, batch size, warm up datio y learning rate.
 Para ver el resto de hiperparametros se debera comprobar en cada notebook respecivo
-## mT5
-• Se uso early stopping con un máximo de 5 épocas
 
-• El tamaño del batch fue de 8
+# Hyperparameters used for finetuning
+The values ​​chosen for the number of epochs, batch size, warm up date and learning rate are shown below.
+To see the other hyperparameters, it should be checked in each respective notebook
+##mT5
+• Early stopping was used with a maximum of 5 epochs
 
-• El warm up ratio se estableció en 0.6
+• The batch size was 8
 
-• Se usó una tasa de aprendizaje de 1e-4
+• The warm up ratio was set to 0.6
+
+• A learning rate of 1e-4 was used
 
 
 ## DistilGPT2
-• La tasa de aprendizaje se ajustó en 1e-5
+• Learning rate adjusted to 1e-5
 
-• Se entreno durante 5 épocas
+• He trained for 5 seasons
 
-• Se uso un warm up ratio de 0.6
+• A warm up ratio of 0.6 was used
 
-• El tamaño del batch se estableció en 8
+• The batch size was set to 8
 
 
 
