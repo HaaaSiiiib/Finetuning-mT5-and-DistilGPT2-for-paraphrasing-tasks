@@ -13,14 +13,12 @@ encoder-decoder architecture.
 DistillGPT2 is a GPT2-inspired model that has undergone parameter distillation, meaning that the number of parameters has been reduced and the model has been compacted. This model
 it is a decoder-only model based on the architecture of the generative GPT models, and it is the lightest of its family.
 
-# Hiperparametros utilizados para el finetuning 
-A continuacion se muestran los valores elegidos para el numero de epocas, batch size, warm up datio y learning rate.
-Para ver el resto de hiperparametros se debera comprobar en cada notebook respecivo
 
 # Hyperparameters used for finetuning
 The values ​​chosen for the number of epochs, batch size, warm up date and learning rate are shown below.
 To see the other hyperparameters, it should be checked in each respective notebook
-##mT5
+
+## mT5
 • Early stopping was used with a maximum of 5 epochs
 
 • The batch size was 8
