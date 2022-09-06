@@ -31,7 +31,7 @@ To see the other hyperparameters, it should be checked in each respective notebo
 ## DistilGPT2
 • Learning rate adjusted to 1e-5
 
-• He trained for 5 seasons
+• Trained in 5 epochs
 
 • A warm up ratio of 0.6 was used
 
