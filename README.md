@@ -6,7 +6,6 @@ The custom database created is found under the name dataset_comb.csv, in the fol
 In the Notebook Databases combination + finetuning DistilGPT2 .ipynb, the code for generating the custom database is available, as well as the code to perform finetuning on DistilGPT2 with the hugging face transformers library training api.
 In the Notebook Finetuning mT5.ipynb the code for finetuning the mT5 model with the simple transformers library is shown.
 
-# Modelos usados 
 # Models used
 mT5 is a variation of the original Google T5 model and was pre-trained on a giant data corpus in many languages. It is a multilingual model with
 encoder-decoder architecture.
